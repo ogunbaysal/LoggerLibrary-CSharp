@@ -1,41 +1,49 @@
-$project
+Basic Logger Library
 ========
-
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
-Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
 
 Features
 --------
 
-- Be awesome
-- Make things faster
+- Static (RAM) Based Log Strategy
+- API Call Log Strategy
+- File Log Strategy
 
-Installation
-------------
 
-Install $project by running:
-
-    install project
-
-Contribute
+Usage
 ----------
+Getting instance of static logger: 
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+    Logger logger = new LoggerCreator.LoggerFactory("loggerName", LogStrategy.STATIC);
 
-Support
--------
+Getting instance of file logger:
+	with default log.txt:
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+    	Logger logger = new LoggerCreator.LoggerFactory("loggerName", LogStrategy.FILE);
 
-License
--------
+   	with custom log.txt:
 
-The project is licensed under the BSD license.
+   		// new FileStrategy(string FilePath)
+   		FileStrategy strategy = new FileStrategy(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+   		Logger logger = new LogCreator.LoggerFactory("loggerName", strategy);
+
+Initialize a new Record and send as a log:
+
+	Record record = new Record("This is a test Log");
+
+	logger.Debug(record);
+	logger.Info(record);
+	logger.Notice(record);
+	logger.Warning(record);
+	logger.Error(record);
+	logger.Critical(record);
+	logger.Alert(record);
+	logger.Emergency(record);
+
+or: 
+	
+	record.setLevel(LogLevel.Alert);
+	logger.Log(record);
+
+Getting Log List:
+
+	List<IRecord> list = logger.getLogs();
