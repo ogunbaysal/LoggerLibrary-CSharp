@@ -15,16 +15,15 @@ Getting instance of static logger:
 
     Logger logger = new LoggerCreator.LoggerFactory("loggerName", LogStrategy.STATIC);
 
-Getting instance of file logger:
-	with default log.txt:
+Getting instance of file logger: with default log.txt:
 
-    	Logger logger = new LoggerCreator.LoggerFactory("loggerName", LogStrategy.FILE);
+    Logger logger = new LoggerCreator.LoggerFactory("loggerName", LogStrategy.FILE);
 
-   	with custom log.txt:
+Getting instance of file logger: with custom log.txt:
 
-   		// new FileStrategy(string FilePath)
-   		FileStrategy strategy = new FileStrategy(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-   		Logger logger = new LogCreator.LoggerFactory("loggerName", strategy);
+	// new FileStrategy(string FilePath)
+	FileStrategy strategy = new FileStrategy(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+	Logger logger = new LogCreator.LoggerFactory("loggerName", strategy);	
 
 Initialize a new Record and send as a log:
 
