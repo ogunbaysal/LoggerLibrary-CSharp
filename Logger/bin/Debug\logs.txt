@@ -1,0 +1,16 @@
+Log Level : Info//**//
+Log Message : Bu Bir Test Info Logudur!!!//**//
+Date : 11/5/2019//**//
+-*-*-*-*-*-*-*-*-*-*-*-
+Log Level : Warning//**//
+Log Message : Bu Bir Test Warning Logudur!!!//**//
+Date : 11/5/2019//**//
+-*-*-*-*-*-*-*-*-*-*-*-
+Log Level : Info//**//
+Log Message : Bu Bir Test Info Logudur!!!//**//
+Date : 11/5/2019//**//
+-*-*-*-*-*-*-*-*-*-*-*-
+Log Level : Warning//**//
+Log Message : Bu Bir Test Warning Logudur!!!//**//
+Date : 11/5/2019//**//
+-*-*-*-*-*-*-*-*-*-*-*-

@@ -1,0 +1,5 @@
+/home/ogun/RiderProjects/Logger/Logger/obj/Debug/Logger.csprojAssemblyReference.cache
+/home/ogun/RiderProjects/Logger/Logger/bin/Debug/Logger.exe
+/home/ogun/RiderProjects/Logger/Logger/bin/Debug/Logger.pdb
+/home/ogun/RiderProjects/Logger/Logger/obj/Debug/Logger.exe
+/home/ogun/RiderProjects/Logger/Logger/obj/Debug/Logger.pdb
